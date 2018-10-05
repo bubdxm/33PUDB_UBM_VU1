@@ -80,14 +80,14 @@ prm-topbar{
 .top-nav-bar{
 	background-color: white !important;
     color:#443a31 !important;
-    
+
 }
 .top-nav-bar a{
-    color:#443a31 !important;   
+    color:#443a31 !important;
 }
 
 .buttons-group .md-button {
-	box-shadow: 1px 0 0 0 rgb(158, 31, 99,0.5); 
+	box-shadow: 1px 0 0 0 rgb(158, 31, 99,0.5);
 }
 
 .buttons-group .md-button:first-child {
@@ -131,6 +131,11 @@ prm-logo .md-primoExplore-theme{
 /* compte lecteur */
 prm-account>md-toolbar.default-toolbar, prm-account>md-toolbar.default-toolbar:not(.md-menu-toolbar), prm-account>md-toolbar.md-primoExplore-theme.default-toolbar {
   background-color: #f9f9f9;
+}
+
+/* Retrait du bouton edit sur la page des modifications personnelles */
+#personal_settings-focus {
+	display:none;
 }
 
 
@@ -217,7 +222,7 @@ prm-facet .sidebar-title {
     color: #9e1f63;
     font-size: 1.8em;
     font-weight:normal;
-   
+
 }
 .multiselect-submit .multiselect-submit-inner .md-button.md-primary, .multiselect-submit .multiselect-submit-inner .md-button.md-primary:hover  {
     background-color: #9e1f63;
@@ -319,7 +324,7 @@ prm-full-view prm-brief-result-container{
 
 
 [aria-label="Notice abrégée"] {
-  order: 0 !important; 
+  order: 0 !important;
 display: none;
 }
 [aria-label="Notice détaillée"] {
@@ -366,26 +371,26 @@ display: none;
    }
 
 #details {
-  order: 1; 
+  order: 1;
 }
 
 
 #getit_link1_0 {
-  order: 3; 
+  order: 3;
 }
 #getit_link1_1 {
-  order: 3; 
+  order: 3;
 }
 #links {
   order: 3;
    }
 #action_list {
   order: 4;
-  
+
 }
 #citationTrails {
   order: 5;
- 
+
 }
 
 #virtualBrowse {
@@ -438,5 +443,3 @@ prm-search > md-content.md-primoExplore-theme .main {
 }
 
 */
-
-
