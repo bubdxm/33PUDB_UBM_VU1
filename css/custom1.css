@@ -13,7 +13,7 @@ body {
 
 /*couleur lien*/
 md-dialog.light-on-dark-dialog md-list md-list-item .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog md-list md-list-item .md-list-item-text h3{
-    color: #9e1f63;
+    color: #8b1f5a;
 }
 /*fonds*/
 .background-dark md-backdrop.md-opaque{
@@ -52,8 +52,8 @@ prm-atoz-search-bar{
 }
 
 .classic-input .search-scope{
-    background-color: #9e1f63;
-    border-color:#9e1f63;
+    background-color: #8b1f5a;
+    border-color:#8b1f5a;
     color:#fff;
 }
 prm-alphabet-toolbar .md-button{
@@ -65,7 +65,7 @@ prm-alphabet-toolbar .md-button:hover {
   color:#ffffff;
 }
 prm-alphabet-toolbar .md-button.active{
-  background-color: #9e1f63 !important;
+  background-color: #8b1f5a !important;
   color:#ffffff;
 }
 
@@ -97,11 +97,11 @@ prm-topbar{
   color : #443a31 !important;
 }
 .menu-arrow{
-  color: #9e1f63 !important;
+  color: #8b1f5a !important;
 }
 prm-user-area-expandable .md-button.user-button {
 
-    color: #9e1f63;
+    color: #8b1f5a;
 
 }
 /* bandeau hover */
@@ -122,7 +122,7 @@ prm-main-menu[menu-type="menu"] {
 
 .top-nav-bar-links{
     border-bottom:3px solid;
-    border-bottom-color:#9e1f63;
+    border-bottom-color:#8b1f5a;
 }
 prm-logo .md-primoExplore-theme{
 	box-shadow: none !important;
@@ -153,14 +153,14 @@ prm-main-menu[menu-type="menu"] .md-button {
 /* barre de recherche */
 
 prm-icon md-icon.md-primoExplore-theme{
-     color:#9e1f63 !important;;
+     color:#8b1f5a !important;;
 }
 
 #changUserStatus{
 	color :#443a31;
 }
 prm-user-area .user-menu-button .user-name {
-	color :#9e1f63;
+	color :#8b1f5a;
 }
 
 
@@ -178,7 +178,7 @@ prm-search-bar{
 }
 
 .md-button.button-confirm, .md-button.button-confirm:hover{
-	color: #9e1f63;
+	color: #8b1f5a;
 }
 
 /* bouton rechercher */
@@ -219,13 +219,13 @@ prm-facet h2[translate="nui.facets.title"]{
     color: #009ed0;
 }
 prm-facet .sidebar-title {
-    color: #9e1f63;
+    color: #8b1f5a;
     font-size: 1.8em;
     font-weight:normal;
 
 }
 .multiselect-submit .multiselect-submit-inner .md-button.md-primary, .multiselect-submit .multiselect-submit-inner .md-button.md-primary:hover  {
-    background-color: #9e1f63;
+    background-color: #8b1f5a;
 }
 
 /* notice complète */
@@ -365,43 +365,43 @@ display: none;
 
 /*rubriques*/
 
-#getit_link2_0, #getit_link2 {
-  order: 0;
- display:none;
-   }
-
 #details {
   order: 1;
 }
 
+#getit_link2_0 {
+  order: 2;
+}
+
+#getit_link2_1 {
+  order:1;
+}
 
 #getit_link1_0 {
   order: 3;
 }
 #getit_link1_1 {
-  order: 3;
+  order: 4;
 }
 #links {
-  order: 3;
+  order: 5;
    }
 #action_list {
-  order: 4;
+  order: 6;
 
 }
 #citationTrails {
-  order: 5;
+  order: 7;
 
 }
 
 #virtualBrowse {
-  order: 6; }
+  order: 8; }
 
 #tags {
-  order: 7;
+  order: 9;
   /*display:none;*/
 }
-
-
 
 /* réduction de la marge entre les rubriques*/
 .full-view-section{
