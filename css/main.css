@@ -93,8 +93,11 @@ prm-main-menu[menu-type="menu"] .md-button {
 }
 */
 /* barre de recherche */
-prm-icon md-icon.md-primoExplore-theme {
+prm-icon:not(.disabledFavTool) md-icon.md-primoExplore-theme {
   color: #8b1f5a !important; }
+
+prm-icon.disabledFavTool md-icon.md-primoExplore-theme {
+  color: #aaaaaa; }
 
 #changUserStatus {
   color: #443a31; }

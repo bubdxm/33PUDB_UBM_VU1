@@ -119,8 +119,12 @@ prm-main-menu[menu-type="menu"] .md-button {
 
 /* barre de recherche */
 
-prm-icon md-icon.md-primoExplore-theme{
+prm-icon:not(.disabledFavTool) md-icon.md-primoExplore-theme {
      color:$primaryUniversityPurple !important;;
+}
+
+prm-icon.disabledFavTool md-icon.md-primoExplore-theme {
+  color:rgb(170, 170, 170);
 }
 
 #changUserStatus{
