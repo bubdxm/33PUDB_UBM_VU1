@@ -1,0 +1,19 @@
+/* Everything related to user account and user actions */
+
+._md-select-value ._md-select-icon:after {
+    display: block;
+    content: '\25BC';
+    position: relative;
+    color:red;
+    top: 2px;
+    speak: none;
+    -webkit-transform: scaleY(0.6) scaleX(1);
+            transform: scaleY(0.6) scaleX(1); 
+    font-size:1.05em;
+}
+
+/* Correction d'un problème sur les lignes qui se superposent dans */
+/* l'affichage des coordonnées du lecteur */
+prm-personal-info .underlined-input.md-primoExplore-theme.md-input-has-value.layout-column {
+	margin-top:1em;
+}
