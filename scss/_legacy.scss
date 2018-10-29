@@ -203,64 +203,7 @@ prm-facet .sidebar-title {
 .full-view-inner-container, .prm-full-view-dialog{
     background-color: #f9f9f9;
 }
-@media screen and (min-height: 460px) and (min-width: 1280px) {
-  /*liste obtenir à la verticale*/
-  [aria-label="Envoyer vers"] {
-    display: none; }
-  prm-full-view #scrollActionList {
-    flex-direction: column; }
-  body.md-dialog-is-showing prm-action-list {
-    float: right;
-    top: 2em;
-    position: fixed;
-    right: 0; }
-  prm-full-view-page #action_list {
-    float: right;
-    top: -4em;
-    position: absolute;
-    right: -4em; }
-  #action_list > div > prm-full-view-service-container > div.section-body > prm-action-list > md-nav-bar > div {
-    right: 50%; }
-  #scrollActionList {
-    align-items: center;
-    align-content: center; }
-  body.md-dialog-is-showing prm-action-container {
-    top: 24em;
-    position: fixed;
-    float: right;
-    right: 1em; }
-  prm-full-view-page prm-action-container {
-    top: 22em;
-    position: absolute;
-    float: right;
-    right: 1em; }
-  prm-full-view .send-actions-content-item > md-content, prm-full-view .send-actions-content-item > md-content.md-primoExplore-theme {
-    padding: 2px; }
-  #action_list .flex-20 {
-    flex: initial;
-    max-width: 0; }
-  #action_list prm-full-view-service-container md-divider, #action_list prm-full-view-service-container h4 {
-    display: none; }
-  /*citation trails to the right*/
-  [aria-label="References"] {
-    display: none; }
-  body.md-dialog-is-showing #citationTrails {
-    bottom: 2em;
-    position: fixed;
-    float: right;
-    right: 1em;
-    padding: 0; }
-  prm-full-view-page #citationTrails {
-    top: 38em;
-    position: absolute;
-    float: right;
-    right: 1em;
-    padding: 0; }
-  #citationTrails .full-view-section-content {
-    padding: 0; }
-  /* make actions sit on top of other elements */
-  prm-action-list, prm-action-container {
-    z-index: 15; } }
+
 
 /*Change top bar from up.case to low.case and for buttons etc journal*/
 body, prm-topbar .md-button, .md-button {
