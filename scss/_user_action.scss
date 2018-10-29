@@ -8,7 +8,7 @@
     top: 2px;
     speak: none;
     -webkit-transform: scaleY(0.6) scaleX(1);
-            transform: scaleY(0.6) scaleX(1); 
+            transform: scaleY(0.6) scaleX(1);
     font-size:1.05em;
 }
 
@@ -16,4 +16,9 @@
 /* l'affichage des coordonnées du lecteur */
 prm-personal-info .underlined-input.md-primoExplore-theme.md-input-has-value.layout-column {
 	margin-top:1em;
+}
+
+/* zone avec les logos pour l'authentification inter institutions */
+#REBUB-Authentification-Ext {
+  background-color: white;
 }
