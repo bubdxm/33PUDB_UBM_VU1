@@ -1,0 +1,6 @@
+<!-- <span ng-bind="mycounter"></span> -->
+<div id="externalSiteList" ng-if="showExternalSiteList">
+  Vous n'avez toujours pas trouvé le document que vous cherchiez ? N'hésitez pas à relancer votre recherche sur les sites suivants pour élargir les possibilités :
+  <a href='http://sudoc.fr/{{ $ctrl.queryTerm }}'><span ng-bind="queryTerm"></span></a><br/>
+  # {{ $ctrl.queryTerm }} ##
+</div>
