@@ -10,9 +10,16 @@ app.component('prmBriefResultContainerAfter', {
       $rootScope.counter = 1;
     }
 
-    if ($rootScope.counter == 6) {
+    var resultList = angular.element(document.getElementsByClassName('list-item-wrapper'));
+    var resultCount = resultList.length;
+
+    if ( (resultCount < 10) && ( $rootScope.counter == resultCount) ) {
+      $scope.showExternalSiteList = true;
+    } else if ($rootScope.counter == 9) {
       $scope.showExternalSiteList = true;
     }
+
+    console.log("CONTER : " + $rootScope.counter + " / " + "resultCount : " + resultCount);
 
     $scope.queryTerm = $scope.$parent.$ctrl.searchService.searchFieldsService._mainSearch;
   }],
