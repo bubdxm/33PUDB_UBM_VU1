@@ -13,9 +13,9 @@ app.component('prmBriefResultContainerAfter', {
     var resultList = angular.element(document.getElementsByClassName('list-item-wrapper'));
     var resultCount = resultList.length;
 
-    if ( (resultCount < 10) && ( $rootScope.counter == resultCount) ) {
+    if ( (resultCount <= 10) && ( $rootScope.counter == resultCount) ) {
       $scope.showExternalSiteList = true;
-    } else if ($rootScope.counter == 9) {
+    } else if ($rootScope.counter == 10) {
       $scope.showExternalSiteList = true;
     }
 

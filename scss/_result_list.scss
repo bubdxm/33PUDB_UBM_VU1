@@ -31,11 +31,15 @@
 }
 
 #externalSiteList {
-	border:4px solid $primaryUniversityPurple;
+	border:3px solid $lightUniversityPurple;
 	border-radius:5px;
 	padding:10px;
 }
 
 #externalSiteList img {
 	height:2.5em;
+}
+
+button.button-confirm:nth-child(1) {
+	font-weight:bold;
 }
