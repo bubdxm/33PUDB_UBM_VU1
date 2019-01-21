@@ -46,6 +46,8 @@ button.button-confirm:nth-child(1) {
 
 /* Sur la liste des résultats, on ne conserve que le Disponible / Emprunté ...
 pas les informations sur les cotes */
-span[translate='delivery.and.other.locations'] {
+span[translate='delivery.and.other.locations'],
+span.locations-link,
+ {
 	display:none;
 }
