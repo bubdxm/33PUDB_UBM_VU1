@@ -209,13 +209,6 @@ prm-facet .sidebar-title {
 body, prm-topbar .md-button, .md-button {
   text-transform: none; }
 
-/*effacement du brief result*/
-prm-full-view .result-item-details, prm-snippet {
-  display:none !important;
-}
-prm-full-view prm-brief-result-container .list-item-primary-content{
-    z-index: unset;
-}
 /* On fixe une taille min du brief result*/
 prm-full-view prm-brief-result-container{
   min-height: 180px;
@@ -223,9 +216,6 @@ prm-full-view prm-brief-result-container{
 
 #details h4, #details div.section-head{
   display:none;
-}
-#details {
-  margin-top:-60px
 }
 
 /*changement de l'ordre des rubriques dans la vue complète*/
