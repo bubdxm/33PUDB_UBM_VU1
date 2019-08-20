@@ -10,3 +10,8 @@ prm-personal-info .underlined-input.md-primoExplore-theme.md-input-has-value.lay
 #REBUB-Authentification-Ext {
   background-color: white;
 }
+
+/* Recherche avancée > Date spécifique */
+input[name=startYear]::placeholder, input[name=endYear]::placeholder {
+	color:rgb(58, 58, 58);
+}
