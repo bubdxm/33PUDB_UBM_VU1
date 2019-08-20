@@ -1,6 +1,11 @@
 var app = angular.module('viewCustom', []);
 app.value('counter', 1);
 
+app.component('prmSearchBarAfter', {
+  bindings: { parentCtrl: '<' },
+  templateUrl: 'custom/33PUDB_UBM_VU1/html/prmSearchBarAfter.html'
+});
+
 app.component('prmBriefResultContainerAfter', {
   bindings: { parentCtrl: '<' },
   controller: ['$scope', '$rootScope', '$element', function controller($scope, $rootScope, $element) {
