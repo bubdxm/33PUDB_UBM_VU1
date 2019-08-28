@@ -1,15 +1,29 @@
 <!-- <span ng-bind="mycounter"></span> -->
-<div id="externalSiteList" ng-if="showExternalSiteList">
-  Vous ne trouvez pas le document que vous cherchez dans Babord+ ? N'hésitez pas à relancer votre recherche sur les sites suivants pour élargir les possibilités :
-  <div layout="row" layout-align="center">
-    <a href='http://www.sudoc.abes.fr//DB=2.1/SET=1/TTL=1/CMD?ACT=SRCHA&IKT=1016&SRT=RLV&TRM={{ queryTerm }}'>
-      <img src='custom/33PUDB_UBM_VU1/img/logo_sudoc.png'/>
-    </a>
-    <a href='https://isidore.science/s?q={{ queryTerm }}'>
-      <img src='custom/33PUDB_UBM_VU1/img/logo_isidore.png'/>
-    </a>
-  </div>
-  <!-- <a href='https://scholar.google.fr/scholar?hl=fr&as_sdt=0%2C5&q={{ queryTerm }}'>
-    <img src='custom/33PUDB_UBM_VU1/img/logo_scholar.png'/>
-  </a> -->
+<div id="externalSiteList" ng-show="$ctrl.showExternalSiteList">
+  <md-card class="default-card _md md-primoExplore-theme">
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Vous ne trouvez pas le document que vous cherchez dans Babord+ ?</span>
+      </md-card-title-text>
+    </md-card-title>
+    
+    <md-card-content>
+      N'hésitez pas à relancer votre recherche sur les sites suivants pour élargir les possibilités :
+      <div layout="row" layout-align="center">
+        <a href='http://www.sudoc.abes.fr//DB=2.1/SET=1/TTL=1/CMD?ACT=SRCHA&IKT=1016&SRT=RLV&TRM={{ queryTerm }}' title='Relancer la recherche sur le sudoc'>
+          <img src='custom/33PUDB_UBM_VU1/img/logo_sudoc.png'/>
+        </a>
+        <a href='https://isidore.science/s?q={{ queryTerm }}'>
+          <img src='custom/33PUDB_UBM_VU1/img/logo_isidore.png'/>
+        </a>
+      </div>
+    </md-card-content>
+
+    <button class="dismiss-alert-button zero-margin md-button md-primoExplore-theme md-ink-ripple button-with-icon" ng-click="$ctrl.externalSearchMsgOnClick()">
+      <prm-icon icon-type="svg" svg-icon-set="navigation" icon-definition="ic_close_24px">
+        <md-icon md-svg-icon="navigation:ic_close_24px" alt="" class="md-primoExplore-theme" aria-hidden="true"></md-icon>
+      </prm-icon>
+      NE PLUS AFFICHER CE MESSAGE
+    </button>
+  </md-card>
 </div>

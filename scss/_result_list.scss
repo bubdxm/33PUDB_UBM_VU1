@@ -60,13 +60,21 @@
 }
 
 #externalSiteList {
-	border:3px solid $lightUniversityPurple;
-	border-radius:5px;
-	padding:10px;
+    background-color: rgb(243,243,243);
+    border-radius: 5px;
+    padding: 10px; }
+
+#externalSiteList .default-card {
+    background-color: #fff;
+    }
+  
+#externalSiteList img {
+    height: 2.5em; 
+    margin: 1em;
 }
 
-#externalSiteList img {
-	height:2.5em;
+.md-headline{
+	font-weight:700;
 }
 
 button.button-confirm:nth-child(1) {
