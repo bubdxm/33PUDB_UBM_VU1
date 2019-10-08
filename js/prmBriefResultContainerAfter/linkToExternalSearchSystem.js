@@ -2,37 +2,19 @@ import linkToExternalSearchSystem from '../../html/linkExternalSiteResultList.ht
 
 class linkToExternalSearchSystemController {
     constructor($scope, $window, favSession){
-        console.log('----> 33PUDB linkToExternalSearchSystemController');
-        if (typeof this.parentCtrl.searchStateService.resultObject.info == 'undefined') {
-          // Notice détaillée
-          return;
+        if (this.parentCtrl.jwtUtilService.storageUtil.localStorage.getItem('viewExternalSearchMessage') != 'false'){
+           this.showExternalSiteList = true;
+           this.parentCtrl.jwtUtilService.storageUtil.localStorage.setItem('viewExternalSearchMessage','true');
         }
-
-        var lastResult = this.parentCtrl.searchStateService.resultObject.info.last;
-        var resultIndex = this.parentCtrl.index;
-        console.log(this.parentCtrl.searchStateService.resultObject.info);
-        console.log(this);
-        if (resultIndex == lastResult && this.parentCtrl.isExpanded == false) {
-          // this.setData('true');
-          if (this.parentCtrl.storageUtil.localStorage.getItem('viewExternalSearchMessage') != 'false'){
-            this.showExternalSiteList = true;
-            this.parentCtrl.storageUtil.localStorage.setItem('viewExternalSearchMessage','true');
-          }
-        } 
-
-        console.log("COUNTER2 : " + resultIndex + " / "  + lastResult);
-    
+       
         $scope.queryTerm = encodeURIComponent(this.parentCtrl.searchService.searchFieldsService._mainSearch);
     }
 
     externalSearchMsgOnClick (){
-      console.log("It's time to kick ass and chew bubble gum, and I'm all outta gum!");
       this.showExternalSiteList = false;
-      this.parentCtrl.storageUtil.localStorage.setItem('viewExternalSearchMessage','false');
+      this.parentCtrl.jwtUtilService.storageUtil.localStorage.setItem('viewExternalSearchMessage','false');
     };
-  
   }
-
 
   linkToExternalSearchSystemController.$inject = ['$scope', '$rootScope', '$element']
   export let linkToExternalSearchSystemConfig = {

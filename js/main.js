@@ -8,5 +8,5 @@ app.component('prmSearchBarAfter', {
 import {linkToExternalSearchSystemConfig} from './prmBriefResultContainerAfter/linkToExternalSearchSystem'
 
 if (app){
-    app.component('prmBriefResultContainerAfter', linkToExternalSearchSystemConfig);
+    app.component('prmSearchResultListAfter', linkToExternalSearchSystemConfig);
 } 
