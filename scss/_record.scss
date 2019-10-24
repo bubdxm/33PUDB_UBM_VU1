@@ -1,0 +1,4 @@
+/* SMA 201910 : suppression du message "Aucun document à afficher pour cet emplacement. Veuillez vous identifier ci-dessus pour voir les options de demande disponibles." qui s'affiche sur les notices Calames */
+.padding-left-medium[ng-if="$ctrl.currLoc.locationNoItems"] {
+    display: none;
+}
