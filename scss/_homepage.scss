@@ -91,3 +91,9 @@ button.flexItem:hover{
 prm-explore-main .header .transparent-top-bar::before {
 	background-color:white;
 }
+
+
+/* 20191125 : Lien de réinitialisation mot de passe pour lecteur invité */
+span[translate="nui.help.login.link1"] {
+	color:$primaryUniversityPurple;
+}
