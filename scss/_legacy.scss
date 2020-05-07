@@ -90,13 +90,6 @@ prm-search-bar{
 	color: $primaryUniversityPurple;
 }
 
-/* bouton rechercher */
-
-.md-button.button-confirm._md-focused:not([disabled]), .md-button.button-confirm.hovered:not([disabled]), .md-button.button-confirm.md-focused:not([disabled]), .md-button.button-confirm:focus:not([disabled]), .md-button.button-confirm:hover:not([disabled]) {
-    background-color: #e7e7e7;
-    color: #ffffff;
-}
-
 /* resultats */
 md-content, md-content.md-primoExplore-theme {
 	background-color: #f9f9f9;
