@@ -75,3 +75,12 @@ prm-logo .md-primoExplore-theme{
 prm-account>md-toolbar.default-toolbar, prm-account>md-toolbar.default-toolbar:not(.md-menu-toolbar), prm-account>md-toolbar.md-primoExplore-theme.default-toolbar {
   background-color: #f9f9f9;
 }
+
+md-dialog.light-on-dark-dialog md-list md-list-item .md-list-item-text .list-item-title, md-dialog.light-on-dark-dialog md-list md-list-item .md-list-item-text h3, 
+md-dialog.light-on-dark-dialog md-list md-list-item.list-login .md-button, md-dialog.light-on-dark-dialog md-list md-list-item.list-login .md-button:hover:not([disabled]) {
+    color: $primaryUniversityPurple;
+}
+
+md-dialog-content .disable-hover .md-button:hover, md-dialog-content .disable-hover button:hover, md-dialog-content .disable-hover .md-button:focus, md-dialog-content .disable-hover button:focus {
+  box-shadow: unset;
+}
