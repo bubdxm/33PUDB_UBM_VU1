@@ -88,3 +88,8 @@ span.locations-link,
  {
 	display:none;
 }
+
+/* Bouton "50 par page" masqué dans la pagination */
+button.md-mini:nth-child(3) {
+	display:none;
+}
